@@ -20,15 +20,18 @@ a {
     text-decoration: none;
 }
 
+li {
+    padding-right: .3rem;
+}
+
 /* Header */
 
 header {
-    margin-bottom: 2rem;
+    margin-bottom: 8rem;
 }
 
 header nav {
     height: 70px;
-    width: 100%;
     background-color: #ff6900;
     padding: 1rem 10rem;
     box-shadow: 1px 1px 5px;
@@ -36,16 +39,15 @@ header nav {
     justify-content: center;
     align-items: center;
     justify-content: space-between;
-    ;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 5;
 }
 
 header nav img {
     height: 2rem;
-}
-
-header nav li,
-header nav a {
-    padding: 0 .3rem;
 }
 
 /* Main */
@@ -73,15 +75,31 @@ main article img {
 /* Footer */
 
 footer nav {
-    height: 100px;
-    width: 100%;
+    padding: 0 10rem;
     background-color: #1a1a1a;
-    padding: 1cap 0;
-    box-shadow: 1px 1px 5px;
+    height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
     justify-content: space-between;
+    color: white;
+}
+
+footer section p:first-child {
+    margin-bottom: 1rem;
+}
+
+.social a {
+    padding: 0 .5rem;
+}
+
+footer li {
+    font-size: 0.8rem;
+    padding-right: 1rem;
+}
+
+footer section:last-child {
+    align-items: flex-start;
 }
 
 /* Classi generiche */
@@ -108,7 +126,7 @@ footer nav {
 
 
 .right {
-left: 16%;
+    left: 16%;
 }
 
 /* Classi specifiche */
@@ -153,4 +171,23 @@ left: 16%;
     font-size: .8rem;
     font-weight: bold;
     top: 80%;
+}
+
+.no-show {
+    display: none;
+}
+
+/* Hover */
+
+article:hover .show {
+    display: none;
+}
+
+article:hover .no-show{
+    display: initial;
+}
+
+.heart:hover {
+    color: red;
+    cursor: pointer;;
 }
