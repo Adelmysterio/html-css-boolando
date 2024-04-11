@@ -3,3 +3,74 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/* Stile generale*/
+
+body {
+    font-family: sans-serif;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* Header */
+
+header nav {
+    height: 70px;
+    width: 100%;
+    background-color: #ff6900;
+    padding: 1cap 0;
+    box-shadow: 1px 1px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav img {
+    height: 2rem;
+}
+
+/* Main */
+
+main {
+    margin: 2rem 10rem;
+    background-color: aqua;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+article {
+    height: 600px;
+    width: calc(33% - .5rem);
+    border: 1rem solid black;
+    margin-bottom: 3rem;
+}
+
+/* Footer */
+
+footer nav {
+    height: 100px;
+    width: 100%;
+    background-color: #1a1a1a;
+    padding: 1cap 0;
+    box-shadow: 1px 1px 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Classi generiche */
+
+.flex {
+    display: flex;
+}
+
+.column {
+    flex-direction: column;
+}
+
