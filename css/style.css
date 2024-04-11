@@ -12,6 +12,12 @@ body {
 
 ul {
     list-style-type: none;
+    color: white;
+}
+
+a {
+    color: white;
+    text-decoration: none;
 }
 
 /* Header */
@@ -20,16 +26,22 @@ header nav {
     height: 70px;
     width: 100%;
     background-color: #ff6900;
-    padding: 1cap 0;
+    padding: 1rem 10rem;
     box-shadow: 1px 1px 5px;
     display: flex;
     justify-content: center;
     align-items: center;
     justify-content: space-between;
+    ;
 }
 
 header nav img {
     height: 2rem;
+}
+
+header nav li,
+header nav a {
+ padding: 0 .3rem;
 }
 
 /* Main */
@@ -74,3 +86,7 @@ footer nav {
     flex-direction: column;
 }
 
+.bold {
+    font-weight: bold;
+
+}
