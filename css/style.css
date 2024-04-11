@@ -98,6 +98,19 @@ footer nav {
     font-weight: bold;
 }
 
+.red {
+    background-color: red;
+}
+
+.green {
+    background-color: green;
+}
+
+
+.right {
+left: 16%;
+}
+
 /* Classi specifiche */
 
 .brand {
@@ -118,4 +131,26 @@ footer nav {
 .deleted {
     color: gray;
     text-decoration: line-through;
+}
+
+.heart {
+    font-size: 2rem;
+    height: 4rem;
+    width: 4rem;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 5%;
+    right: 0;
+}
+
+.tag {
+    position: absolute;
+    padding: 0.4rem .8rem;
+    color: white;
+    font-size: .8rem;
+    font-weight: bold;
+    top: 80%;
 }
